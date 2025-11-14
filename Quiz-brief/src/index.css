@@ -79,7 +79,7 @@
 
 .Btn-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 20px;
 }
 
@@ -96,8 +96,8 @@
 }
 
 .Btn-1:hover {
-    color: #B8C0BB;
-    background-color: rgb(140, 138, 167);
+    color: #481a9e;
+    background-color:#B8C0BB;
 }
 
 /*Score*/
@@ -147,7 +147,6 @@
     background-color: #6a11cb;
     transform: scale(1.05);
 }
-
 
 
 /*Home*/

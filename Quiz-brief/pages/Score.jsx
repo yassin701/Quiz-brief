@@ -23,7 +23,7 @@ export default function Score() {
       <div className='score-container'>
         <h3>{Msg}</h3>
         <p>Votre score est {score} / {total} </p>
-        <button onClick={() => Navigate('/')}>Back to Home</button>
+        <button onClick={() => Navigate('/quizz')}>Back to Quiz</button>
       </div>
     </div>
   )
