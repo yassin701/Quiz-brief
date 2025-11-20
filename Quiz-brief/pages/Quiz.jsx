@@ -4,17 +4,18 @@ import quizData from './data/question'
 
 
 export default function Quiz() {
-    const [index, setIndex] = useState(0);
+
+    const [count, setCount] = useState(0);
     const [score, setScore] = useState(0);
-    const question = quizData[index];
+    const question = quizData[count];
     const navigate = useNavigate()
 
     const handlClick = (value) => {
-        if (index < quizData.length - 1) {
+        if (count < quizData.length - 1) {
             if (value === question.answer) {
                 setScore(score + 1);
             }
-            setIndex(index + 1)
+            setCount(count + 1)
         } else {
             navigate('/score', { state: { score: score + (value === question.answer ? 1 : 0), total: quizData.length } });
         }
@@ -22,7 +23,7 @@ export default function Quiz() {
     return (
         <>
             <div className='container'>
-                <h1>{index + 1}{question.question}</h1>
+                <h1>{count +1}{question.question}</h1>
             </div>
             <div className='Btn'>
                 <div className='Btn-content'>
