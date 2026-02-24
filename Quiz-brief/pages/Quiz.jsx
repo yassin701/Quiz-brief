@@ -23,7 +23,7 @@ export default function Quiz() {
     return (
         <>
             <div className='container'>
-                <h1>{count +1}{question.question}</h1>
+                <h1>{count +1}.{question.question}</h1>
             </div>
             <div className='Btn'>
                 <div className='Btn-content'>

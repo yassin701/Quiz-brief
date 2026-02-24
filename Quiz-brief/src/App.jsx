@@ -1,10 +1,10 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
-import Navbar from './Components/navbar'
-import Footer from './Components/footer'
+import Navbar from './Components/Navbar'
+import Footer from './Components/Footer'
 import Score from '../pages/Score'
 import Quiz from '../pages/Quiz'
-import Home from '../pages/home'
+import Home from '../pages/Home'
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Route path='/score' element={<Score />} />
       </Routes>
       <Footer />
-      </>
+    </>
   )
 }
 
